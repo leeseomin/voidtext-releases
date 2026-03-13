@@ -4,7 +4,7 @@ Public release repository for Void Text distribution artifacts.
 
 ## Current Release Index
 
-- `Releases/v0.2`
+- [v0.2](./Releases/v0.2/README.md)
 
 ## Upload Flow
 
@@ -17,3 +17,4 @@ Public release repository for Void Text distribution artifacts.
 
 - Do not pre-create versions that are not shipped yet.
 - Keep binary artifacts in GitHub Release assets instead of Git history.
+- Local `.dmg` copies may exist temporarily for upload, but they should stay untracked.

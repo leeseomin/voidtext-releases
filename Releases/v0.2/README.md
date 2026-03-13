@@ -2,12 +2,13 @@
 
 ## Assets
 
-- Add the GitHub Release asset link here.
+- DMG download: `https://github.com/leeseomin/voidtext-releases/releases/download/v0.2/VoidText.app.dmg`
+- This link becomes live after the `v0.2` GitHub Release asset upload finishes.
 
 ## Checksums
 
-- Add the SHA256 value here.
+- SHA256: `1abe108e0334a087553ad0cdc34d56461c3285c813a39e8f7f4bc9875cd95246`
 
 ## Notes
 
-- Add the release notes for v0.2 here.
+- Upload the notarized `VoidText.app.dmg` to the GitHub Release tagged `v0.2`.
