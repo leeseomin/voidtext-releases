@@ -3,3 +3,5 @@
 Public release repository for Void Text distribution artifacts.
 
 Download the latest notarized DMG from the Releases page.
+
+[Read the introduction](https://leeseomin.pages.dev/blog/2026-03-20-introducing-void-text/)
