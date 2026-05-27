@@ -20,11 +20,13 @@ for (const file of files) {
   await copyFile(source, join(distPath, basename(file)));
 }
 
-const videosSrc = fileURLToPath(new URL('../videos/', import.meta.url));
-const videosDst = join(distPath, 'videos');
-try {
-  await stat(videosSrc);
-  await cp(videosSrc, videosDst, { recursive: true });
-} catch {}
+for (const directory of ['videos', 'images']) {
+  const source = fileURLToPath(new URL(`../${directory}/`, import.meta.url));
+  const destination = join(distPath, directory);
+  try {
+    await stat(source);
+    await cp(source, destination, { recursive: true });
+  } catch {}
+}
 
 console.log('Built static site to dist/');

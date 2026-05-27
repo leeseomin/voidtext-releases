@@ -452,7 +452,8 @@ h1 {
   justify-self: center;
 }
 
-.demo-card video {
+.demo-card video,
+.demo-card img {
   display: block;
   width: 100%;
   height: auto;
@@ -480,7 +481,8 @@ h1 {
   line-height: 1.5;
 }
 
-.demo-card kbd {
+.demo-card kbd,
+.demo-pill {
   display: inline-block;
   align-self: flex-start;
   padding: 4px 9px;
