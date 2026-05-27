@@ -145,7 +145,7 @@ a {
 .hero-section {
   position: relative;
   display: grid;
-  min-height: 66svh;
+  min-height: 78svh;
   overflow: hidden;
   align-items: end;
   padding: 116px max(28px, calc((100vw - 1180px) / 2)) 58px;
@@ -169,14 +169,27 @@ a {
 
 .hero-scrim {
   background:
-    linear-gradient(90deg, rgba(13, 19, 26, 0.9) 0%, rgba(13, 19, 26, 0.72) 36%, rgba(13, 19, 26, 0.22) 100%),
+    linear-gradient(90deg, rgba(13, 19, 26, 0.9) 0%, rgba(13, 19, 26, 0.72) 36%, rgba(13, 19, 26, 0.08) 100%),
     linear-gradient(0deg, rgba(13, 19, 26, 0.72) 0%, rgba(13, 19, 26, 0) 46%);
+}
+
+.hero-preview {
+  position: absolute;
+  bottom: 72px;
+  right: max(28px, calc((100vw - 1180px) / 2));
+  width: min(32vw, 500px);
+  max-height: calc(100% - 210px);
+  z-index: 1;
+  opacity: 0.92;
+  object-fit: contain;
+  object-position: right bottom;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 760px;
+  transform: translateY(-28px);
   color: #fffdf6;
 }
 
@@ -556,6 +569,14 @@ h1 {
   .hero-section {
     min-height: 62svh;
     padding-top: 112px;
+  }
+
+  .hero-preview {
+    display: none;
+  }
+
+  .hero-content {
+    transform: none;
   }
 
   h1 {
