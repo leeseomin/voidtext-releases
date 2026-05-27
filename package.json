@@ -1,0 +1,11 @@
+{
+  "name": "voidtext-release-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "dev": "node scripts/dev-server.mjs . 4173",
+    "preview": "node scripts/dev-server.mjs dist 4173"
+  }
+}

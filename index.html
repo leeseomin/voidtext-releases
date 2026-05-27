@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download Void Text, a free native macOS writing app with a focused editor, PDF export, font presets, and keyboard-driven controls."
+    />
+    <meta property="og:title" content="Void Text" />
+    <meta
+      property="og:description"
+      content="A quiet native writing space for Mac. Free, compact, and built for focused drafts."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/leeseomin/voidtext-releases/main/intro.webp"
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <link rel="preload" href="./intro.webp" as="image" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232c3f50'/%3E%3Ctext x='50' y='64' font-family='monospace' font-size='54' text-anchor='middle' fill='%23f071c8'%3EV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Void Text - macOS Writing App</title>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand-mark" href="#top" aria-label="Void Text home">Void Text</a>
+      <nav class="site-nav" aria-label="Page sections">
+        <a href="#focus">Focus</a>
+        <a href="#features">Features</a>
+        <a href="#release">Release</a>
+      </nav>
+      <a class="header-action" href="https://github.com/leeseomin/voidtext-releases/releases/latest">
+        Download
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <img class="hero-image" src="./intro.webp" alt="Void Text syntax-highlighted editor preview" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="release-label">Latest release: v0.54.0</p>
+          <h1 id="hero-title">Void Text</h1>
+          <p class="tagline">A quiet, native writing space for Mac.</p>
+          <p class="supporting-note">
+            Free, compact, and built with Swift so the interface can step back while your draft stays in focus.
+          </p>
+          <div class="hero-actions" aria-label="Download and reference links">
+            <a class="primary-action" href="https://github.com/leeseomin/voidtext-releases/releases/latest">
+              Download Latest Version
+            </a>
+            <a
+              class="secondary-action"
+              href="https://leeseomin.pages.dev/blog/2026-03-20-introducing-void-text/"
+            >
+              Read Introduction
+            </a>
+            <a class="secondary-action" href="https://github.com/leeseomin/voidtext-releases/releases">
+              GitHub Releases
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-label="Void Text summary">
+        <div>
+          <span>Free</span>
+          <strong>No subscription</strong>
+        </div>
+        <div>
+          <span>Native</span>
+          <strong>Swift macOS app</strong>
+        </div>
+        <div>
+          <span>Compact</span>
+          <strong>About 15 MB</strong>
+        </div>
+        <div>
+          <span>Stable</span>
+          <strong>50 MB editable files</strong>
+        </div>
+      </section>
+
+      <section id="focus" class="focus-section" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="section-kicker">Focused writing</p>
+          <h2 id="focus-title">The editor stays spacious until you ask for more structure.</h2>
+        </div>
+        <div class="focus-layout">
+          <article class="feature-panel">
+            <h3>Immersion mode</h3>
+            <p>
+              Pull the interface away with Command + 1 when the document should take over the screen.
+            </p>
+          </article>
+          <article class="feature-panel">
+            <h3>Readable distance</h3>
+            <p>
+              Zoom in, zoom out, or return to actual size without leaving the keyboard.
+            </p>
+          </article>
+          <article class="feature-panel">
+            <h3>Structure on demand</h3>
+            <p>
+              Bring back the sidebar and current line number only when navigation matters.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="feature-section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="section-kicker">Major features</p>
+          <h2 id="features-title">Native speed, calm typography, and practical export in one small app.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <p>Typography</p>
+            <h3>JetBrains Mono, Fira Code, UDEV Gothic</h3>
+            <span>Cycle font presets while writing so code notes, drafts, and multilingual text each get the right feel.</span>
+          </article>
+          <article class="feature-card">
+            <p>Large files</p>
+            <h3>Edit up to 50 MB with a read-only fallback</h3>
+            <span>Oversized documents remain accessible without putting editing stability at risk.</span>
+          </article>
+          <article class="feature-card">
+            <p>Export</p>
+            <h3>Built-in PDF output</h3>
+            <span>Turn a clean writing surface into a shareable document without a separate export workflow.</span>
+          </article>
+          <article class="feature-card">
+            <p>Controls</p>
+            <h3>Keyboard-first by default</h3>
+            <span>Focus, zoom, structure, and font changes sit close to the hands that are already typing.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="shortcut-section" aria-labelledby="shortcuts-title">
+        <div class="shortcut-copy">
+          <p class="section-kicker">Shortcuts</p>
+          <h2 id="shortcuts-title">Fast changes without breaking the writing flow.</h2>
+        </div>
+        <dl class="shortcut-list">
+          <div>
+            <dt>Command + 1</dt>
+            <dd>Focus Mode</dd>
+          </div>
+          <div>
+            <dt>Command + Plus</dt>
+            <dd>Zoom In</dd>
+          </div>
+          <div>
+            <dt>Command + Minus</dt>
+            <dd>Zoom Out</dd>
+          </div>
+          <div>
+            <dt>Command + 0</dt>
+            <dd>Reset Zoom</dd>
+          </div>
+          <div>
+            <dt>Command + 3</dt>
+            <dd>Show Current Line Number</dd>
+          </div>
+          <div>
+            <dt>Command + 4</dt>
+            <dd>Toggle Sidebar</dd>
+          </div>
+          <div>
+            <dt>Command + 5</dt>
+            <dd>Change Font</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="release" class="release-section" aria-labelledby="release-title">
+        <div class="release-copy">
+          <p class="section-kicker">Release</p>
+          <h2 id="release-title">Download the current public build from GitHub Releases.</h2>
+          <p>
+            The latest public release is v0.54.0, published with Markdown and JS/TS parsing refinements, improved
+            Python f-string highlighting, and enhanced C++ documentation highlighting.
+          </p>
+        </div>
+        <div class="release-actions">
+          <a class="primary-action" href="https://github.com/leeseomin/voidtext-releases/releases/latest">
+            Download v0.54.0
+          </a>
+          <a class="secondary-action" href="https://github.com/leeseomin/voidtext-releases/releases">
+            All Releases
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Void Text Releases</p>
+      <a href="https://leeseomin.pages.dev/">LEE SEOMIN</a>
+    </footer>
+  </body>
+</html>
