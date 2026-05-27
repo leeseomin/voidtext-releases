@@ -457,7 +457,8 @@ h1 {
   }
 
   .proof-band,
-  .feature-grid {
+  .feature-grid,
+  .demo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -549,7 +550,8 @@ h1 {
 
   .proof-band,
   .feature-grid,
-  .shortcut-list {
+  .shortcut-list,
+  .demo-grid {
     grid-template-columns: 1fr;
   }
 
@@ -583,7 +585,70 @@ h1 {
     padding: 14px 0;
   }
 
-  .site-footer {
+.demo-section {
+  width: min(100% - 36px, 1180px);
+  margin: 0 auto;
+  padding: 86px 0 24px;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.demo-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  overflow: hidden;
+}
+
+.demo-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #1a1a1a;
+}
+
+.demo-card figcaption {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px;
+}
+
+.demo-card h3 {
+  margin: 0 0 6px;
+  font-size: 19px;
+  line-height: 1.15;
+}
+
+.demo-card p {
+  flex: 1;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.demo-card kbd {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper-strong);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  font-weight: 720;
+  color: var(--ink);
+}
+
+.site-footer {
     width: min(100% - 28px, 1180px);
     flex-direction: column;
   }

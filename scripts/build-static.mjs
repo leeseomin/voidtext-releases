@@ -1,4 +1,4 @@
-import { copyFile, mkdir, rm, stat } from 'node:fs/promises';
+import { copyFile, cp, mkdir, rm, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { basename, join } from 'node:path';
 
@@ -19,5 +19,12 @@ for (const file of files) {
   }
   await copyFile(source, join(distPath, basename(file)));
 }
+
+const videosSrc = fileURLToPath(new URL('../videos/', import.meta.url));
+const videosDst = join(distPath, 'videos');
+try {
+  await stat(videosSrc);
+  await cp(videosSrc, videosDst, { recursive: true });
+} catch {}
 
 console.log('Built static site to dist/');
