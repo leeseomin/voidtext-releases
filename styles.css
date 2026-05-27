@@ -145,10 +145,10 @@ a {
 .hero-section {
   position: relative;
   display: grid;
-  min-height: 78svh;
+  min-height: clamp(650px, 68svh, 840px);
   overflow: hidden;
-  align-items: end;
-  padding: 116px max(28px, calc((100vw - 1180px) / 2)) 58px;
+  align-items: center;
+  padding: clamp(96px, 10svh, 124px) max(28px, calc((100vw - 1180px) / 2)) clamp(44px, 6svh, 68px);
   background: #233547;
 }
 
@@ -174,11 +174,12 @@ a {
 }
 
 .hero-preview {
+  display: none;
   position: absolute;
-  bottom: 72px;
+  bottom: clamp(44px, 6svh, 64px);
   right: max(28px, calc((100vw - 1180px) / 2));
-  width: min(32vw, 500px);
-  max-height: calc(100% - 210px);
+  width: min(31vw, 470px);
+  max-height: calc(100% - 176px);
   z-index: 1;
   opacity: 0.92;
   object-fit: contain;
@@ -188,8 +189,9 @@ a {
 .hero-content {
   position: relative;
   z-index: 1;
+  width: min(100%, 760px);
+  min-width: 0;
   max-width: 760px;
-  transform: translateY(-28px);
   color: #fffdf6;
 }
 
@@ -224,7 +226,7 @@ h1 {
 }
 
 .tagline {
-  max-width: 640px;
+  max-width: 100%;
   margin-bottom: 12px;
   font-size: 42px;
   font-weight: 820;
@@ -232,7 +234,7 @@ h1 {
 }
 
 .supporting-note {
-  max-width: 590px;
+  max-width: 100%;
   margin-bottom: 28px;
   color: rgba(255, 253, 246, 0.86);
   font-size: 22px;
@@ -647,13 +649,7 @@ h1 {
   }
 
   .header-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .header-icon svg {
-    width: 24px;
-    height: 24px;
+    display: none;
   }
 
   .hero-section {
